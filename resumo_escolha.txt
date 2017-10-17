@@ -1,0 +1,6 @@
+- Conjunto de n-1 apostas: b1,b2,...,bN-1
+- The goal is to maximize the wealth w0 or the average growth
+- If we lose, it all goes to 0
+- To solve it, they added a new bet bN. See formula (5)
+- Problem is convez but hard to compute. We compute it in CVX
+- The interest part is the d term (drawdown). We can also tune the parameter lambda to chose how willing we are are/ how conservative we are
