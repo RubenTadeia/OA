@@ -40,13 +40,7 @@ load (datasetFile);
     sum(b) == 1; b >= 0;
  cvx_end;
  
-%% W plot
-
-w = zeros(N,1);
+w = zeros(K,1);
 w(1,1) = 1;
-for i = 2:N
-    w(i,1) = w(i-1,1) * (returns_matrix(:,i-1)' * b);
-end
-    
-figure(1); clf;
-plot(1:1:N, w);
+for i = 2:K 
+ figure(1); clf;
