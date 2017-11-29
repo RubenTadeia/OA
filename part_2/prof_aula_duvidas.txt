@@ -1,0 +1,16 @@
+-> Focar no primeiro gráfico
+-> para o mesmo R (vector de outcomes) não sabemos qual é o pi que justifica a ocorrencia de cada um deles. 
+-> L hipoteses, ou calha um ou o segundo ou o terceiro... ou o L
+
+
+parte 2.2
+-> maximizar E[log b*n^T] - Sum fi_k*b_k
+			-> taxa de crescimento
+			-> sum é uma função de custo (convertida para taxa de crescimento)
+
+-> testar uma estratégia b aleatória, para perceber a importância da óptima;
+-> apostar uma vez, só existe um desvio.
+-> custo sempre não negativo. Desviar para cima é alpha_k, desviar para baixo é beta
+-> modelar a função para que o cvx consiga resolver...
+-> conhecemos o pi e o r da primeira fase.
+-> 

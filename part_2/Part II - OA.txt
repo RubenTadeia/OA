@@ -1,0 +1,54 @@
+Part II - OA
+
+###########################################################################################################################################################################
+	Fase I
+
+---------------------------------------------------------------------
+
+Dúvidas:
+
+	-> Temos um L genérico. Que L é este?
+		R: Existem L hipóteses finitas para o vector pi.
+
+	-> O que é formular um problema? É o que eles fazem no paper?
+
+---------------------------------------------------------------------
+
+Retirado da aula de dúvidas em bullet points:
+
+	1 -> Só vamos apostar uma vez;
+	2 -> O vector de probabilidades (vector pi) já não é certo pode ser um de X vectores, nem sabemos a probabilidade de qualquer um dos vectores(não deve ser random);
+	3 -> Não é implementado no Cvx;
+	4 -> Formular o problema original (sem o drawdown, lambda a 0) mas descobrir a estratégia óptima e robusta para cada um dos vector pi;
+	5 -> Não podemos avaliar o desempenho da estratégia óptima porque não temos a probabilidade de cada um dos vectores de probabilidades;
+	6 -> É Suposto formular o problema que dá a estratégia óptima (não dependendo do vector de probabilidades), %%ver tópico 4 %%;
+
+---------------------------------------------------------------------
+
+
+
+###########################################################################################################################################################################
+	Fase II
+
+---------------------------------------------------------------------
+
+O dataset da parte 2 inclui 3 vectores coluna com dimensão 20x1:
+	
+	-> alfa
+	-> b_ref (Estratégia de referência, ou seja herdámos um portefólio)
+	-> beta
+
+---------------------------------------------------------------------
+
+Retirado da aula de dúvidas em bullet points:
+
+	1 -> Herdamos um portefólio em que temos acções;
+	2 -> Ou seja se herdamos uma estratégia de investimento, não existem custos de transação;
+	3 -> Cada transação significa fazer uma aposta b_i (i = um valor de iteração);
+	4 -> Se a estratégia óptima for igual à que herdamos não pagamos custos, mas se desviarmos temos que pagar uma taxa definida por alba_n e beta_n;
+	5 -> As funções não são lineares. Temos que codificar esta expressão de modo a codarmos isto no Cvx;
+	6 -> Minimizar uma solução convexa é o mesmo que máximizar uma função concava. É só trocar o sinal;
+	7 -> Cvx faz tudo, grande tropa ele;
+	8 -> Sem drawdown means = Lambda é 0;
+
+---------------------------------------------------------------------
