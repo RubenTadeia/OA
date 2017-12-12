@@ -10,7 +10,9 @@
 %
 %   Diogo Henrique Monteiro Silva   79462
 %
-%   Script: Main of the Project
+%   Script:
+%      -> First Phase
+%         - Part I
 
 %% Reset Variable states
 clc;
